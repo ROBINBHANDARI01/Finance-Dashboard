@@ -13,7 +13,7 @@ export default function Nav() {
 
         <div class="w-110 gap-2 bg-gray-900 h-8 rounded-lg flex items-center">
           <Search class="ml-3 h-5"></Search>
-          <p class="text-gray-500 text-sm">Search Anything...</p>
+          <p class="text-(--text-secondary) text-sm">Search Anything...</p>
         </div>
 
         <div class="flex  items-center gap-5">
@@ -26,7 +26,7 @@ export default function Nav() {
             <img src={user} class="h-8"></img>
             <div>
               <h1 class="font-medium text-sm">Robin Bhandari</h1>
-              <p class="text-gray-400 text-xs">Admin</p>
+              <p class="text-(--text-secondary) text-xs">Admin</p>
               
             </div>
           </div>

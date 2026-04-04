@@ -1,6 +1,5 @@
 import Nav from "../components/dashboard/Navbar"
 import Card from "../components/dashboard/card"
-import card from "../components/dashboard/card"
 export default function Dashboard(){
     return(
         <div className="flex flex-col gap-6 p-4 px-5">
@@ -11,13 +10,13 @@ export default function Dashboard(){
   {/* Header */}
   <div>
     <h1 className="text-2xl font-bold">Dashboard</h1>
-    <p className="text-sm text-gray-400">
+    <p className="text-sm text-(--text-secondary)">
       Welcome back Robin, here's your financial overview.
     </p>
   </div>
 
   {/* Summary Cards */}
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
     <Card></Card>
     <Card></Card>
     <Card></Card>
