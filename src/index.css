@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+
 :root {
   /* DARK MODE (default) */
   /* Background */
@@ -47,4 +49,5 @@ body {
   background: var(--bg);
   color: var(--text-primary);
   transition: all 0.25s ease;
+  font-family: 'Inter', sans-serif;
 }

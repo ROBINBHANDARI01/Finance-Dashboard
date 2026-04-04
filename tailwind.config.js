@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
     extend: {
+
+      screen:{
+        xs: '500px',
+        sm: '640px',
+        md: '768px',
+        big: '956px',
+        lg: '1024px',
+        xlg: '1536px'
+      },
+
       colors: {
         bg: "var(--bg)",
         surface: "var(--surface)",
@@ -22,6 +32,9 @@ export default {
 
         success: "var(--success)",
         error: "var(--error)",
+      },
+      fontFamily:{
+        inter: ['Inter', 'Poppins', 'sans-serif']
       },
       borderRadius: {
         xl: "12px",
