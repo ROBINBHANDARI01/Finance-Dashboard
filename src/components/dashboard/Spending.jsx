@@ -6,14 +6,14 @@ export default function Spending() {
   const total = spendingBreakdown.reduce((sum, item) => sum + item.amount, 0);
 
   return (
-    <div className="p-5 bg-(--surface) border border-(--border) rounded-2xl">
+    <div className="mt-15 md:mt-0 p-5  bg-(--surface) border border-(--border) rounded-2xl">
       
-      <div className="mb-4">
+      <div className="mb-5">
         <h2 className="text-sm text-(--text-primary) font-bold">Spending Breakdown</h2>
         <p className="text-xs text-(--text-secondary)">Where your money goes</p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-6">
+      <div className="flex flex-col md:flex-row items-center ">
 
         {/* Chart + Center Text */}
         <div className="relative w-48 h-55 shrink-0">
@@ -23,10 +23,10 @@ export default function Spending() {
                 data={spendingBreakdown}
                 cx="50%"
                 cy="50%"
-                innerRadius={55}
+                innerRadius={57}
                 outerRadius={75}
                 dataKey="amount"
-                paddingAngle={3}
+                paddingAngle={0}
               >
                 {spendingBreakdown.map((entry, index) => (
                   <Cell key={index} fill={entry.color} />

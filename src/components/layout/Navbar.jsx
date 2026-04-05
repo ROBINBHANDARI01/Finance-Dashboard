@@ -6,7 +6,7 @@ export default function Nav({ setIsOpen }) {
   return (
     <div className="flex items-center justify-between p-4  w-full">
   
-      <div className="flex items-center gap-2 md:hidden">
+      <div className="flex items-center gap-2 lg:hidden">
         <button onClick={() => setIsOpen(true)}>
           <Menu />
         </button>

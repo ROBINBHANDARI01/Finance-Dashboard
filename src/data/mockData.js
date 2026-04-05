@@ -91,26 +91,9 @@ export const transactions = [
     amount: +3800.00,
     status: "Completed",
   },
+  
   {
     id: 4,
-    date: "Jul 21, 2024",
-    description: "Spotify",
-    category: "Entertainment",
-    type: "Expense",
-    amount: -9.99,
-    status: "Completed",
-  },
-  {
-    id: 5,
-    date: "Jul 20, 2024",
-    description: "Flipkart Order",
-    category: "Shopping",
-    type: "Expense",
-    amount: -54.75,
-    status: "Completed",
-  },
-  {
-    id: 6,
     date: "Jul 19, 2024",
     description: "Freelance Project",
     category: "Income",
@@ -119,7 +102,7 @@ export const transactions = [
     status: "Completed",
   },
   {
-    id: 7,
+    id: 5,
     date: "Jul 18, 2024",
     description: "Electricity Bill",
     category: "Housing",
@@ -127,17 +110,9 @@ export const transactions = [
     amount: -95.00,
     status: "Completed",
   },
+  
   {
-    id: 8,
-    date: "Jul 17, 2024",
-    description: "Zomato Order",
-    category: "Food & Dining",
-    type: "Expense",
-    amount: -22.40,
-    status: "Completed",
-  },
-  {
-    id: 9,
+    id: 6,
     date: "Jul 16, 2024",
     description: "Internet Bill",
     category: "Housing",
@@ -146,7 +121,7 @@ export const transactions = [
     status: "Completed",
   },
   {
-    id: 10,
+    id: 7,
     date: "Jul 15, 2024",
     description: "YouTube Premium",
     category: "Entertainment",

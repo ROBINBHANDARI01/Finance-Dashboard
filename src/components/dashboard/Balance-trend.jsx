@@ -4,18 +4,18 @@ import { balanceTrend } from "../../data/mockData"
 
 export default function Balancetend(){
     return(
-        <div className="p-5 rounded-2xl bg-(--surface) border border-(--border)">
+        <div class="p-5 rounded-2xl bg-(--surface) border border-(--border)">
     
-      <div className="mb-4">
-        <h2 className="text-sm text-(--text-primary) font-bold">
+      <div class="mb-4">
+        <h2 class="text-sm text-(--text-primary) font-bold">
           Balance Trend
         </h2>
-        <p className="text-xs text-(--text-secondary)">
+        <p class="text-xs text-(--text-secondary)">
           Track your balance over time
         </p>
       </div>
 
-      <div className="w-full h-55">
+      <div class="w-full h-55">
         <ResponsiveContainer>
           <AreaChart data={balanceTrend}>
           <CartesianGrid strokeDasharray="1 6" vertical={false} />

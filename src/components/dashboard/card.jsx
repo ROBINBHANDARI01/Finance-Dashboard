@@ -5,7 +5,7 @@ export default function Card() {
   return (
     <div class="p-[0.435rem] md:p-3 border border-(--border) bg-(--surface) rounded-xl w-full">
       <div class="flex items-center gap-2">
-        <img src={balance} class="size-6"/>
+        <img src={balance} class="size-6.5 "/>
         <h2 class="font-medium text-xs">Total Balance</h2>
       </div>
 

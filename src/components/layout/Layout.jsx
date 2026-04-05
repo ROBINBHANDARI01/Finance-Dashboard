@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex  h-screen">
 
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 

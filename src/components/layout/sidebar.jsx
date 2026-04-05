@@ -6,7 +6,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       {/* Overlay (mobile) */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 lg:block hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
 
-          md:translate-x-0 md:static md:block
+          lg:translate-x-0 lg:static md:block
         `}
       >
         <div class="flex items-center">
