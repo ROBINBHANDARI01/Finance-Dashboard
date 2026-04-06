@@ -79,4 +79,4 @@ Deploying production-ready apps on Vercel
 ![Across All Devices](./src//assets/UI%20images/mockup-all-framed.png)
 ![Dashboard](./src/assets//UI%20images/mockup-desktop-framed%20(1).png)
 ![Mobile View](./src/assets/UI%20images/mockup-mobile-framed%20(1).png)
-![Tablet View](./src/assets/UI%20images/mockup-tablet-framed%20(1).pngpng)
+![Tablet View](./src/assets/UI%20images/mockup-tablet-framed%20(1).pngp)
