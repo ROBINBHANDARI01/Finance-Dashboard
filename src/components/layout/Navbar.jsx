@@ -1,8 +1,10 @@
 import logo from "../../assets/NavBar/logo.png";
 import user from "../../assets/NavBar/user.png";
-import { Sun, Bell, Search, Menu } from "lucide-react";
+import { useTheme } from "../../Context/ThemeContext";
+import { Sun, Bell, Search, Menu, Moon } from "lucide-react";
 
 export default function Nav({ setIsOpen }) {
+  const {theme, toggleTheme} = useTheme();
   return (
     <div className="flex items-center justify-between p-4  w-full">
   
@@ -14,14 +16,15 @@ export default function Nav({ setIsOpen }) {
         <h1 className="font-bold text-lg">FinTrack</h1>
       </div>
 
-      <div className="hidden md:flex bg-gray-900 h-8 rounded-lg items-center gap-2 w-80">
+      <div className="hidden md:flex bg-(--surface) h-8 rounded-lg items-center gap-2 w-80">
         <Search className="ml-3 h-5" />
         <p className="text-sm text-(--text-secondary)">Search Anything...</p>
       </div>
 
       <div className="flex items-center gap-3 ml-auto">
-        <Sun className="size-5" />
-        <Bell className="size-5" />
+        <button onClick={toggleTheme}>
+          {theme === "dark"? <Sun class="size-5"></Sun> : <Moon class="size-5"></Moon>}
+        </button>
 
         <div className="flex items-center gap-2">
           <img src={user} className="h-8 w-8 rounded-full" />
