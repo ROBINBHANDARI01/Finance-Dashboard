@@ -2,7 +2,9 @@ import Card from "../components/dashboard/card";
 import Spending from "../components/dashboard/Spending";
 import Balancetend from "../components/dashboard/Balance-trend";
 import Transaction from "../components/dashboard/TransactionsTable";
-import { transactions } from "../data/mockData";
+import Insights from "../components/dashboard/Insights";
+import { summaryCards, transactions } from "../data/mockData";
+import { Car } from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -16,25 +18,30 @@ export default function Dashboard() {
 
       {/* Summary Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+       {summaryCards.map((card) => (
+        <Card 
+        key={card.id}
+        title={card.title}
+        amount={card.amount}
+        change={card.change}
+        trend={card.trend}
+        />
+       ))}
       </div>
 
       {/* Middle Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start" >
-        <div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 items-stretch" >
+        <div class="lg:col-span-2 md:col-span-2">
           <Balancetend />
         </div>
 
-        <div>
+        <div class="lg:col-span-1">
           <Spending></Spending>
         </div>
 
-        <div ><Transaction data={transactions}/></div>
+        <div class="lg:col-span-2 md:col-span-2"><Transaction data={transactions}/></div>
 
-          <div><Spending></Spending></div>
+          <div class="lg:col-span-1"><Insights></Insights></div>
 
       </div>
 
