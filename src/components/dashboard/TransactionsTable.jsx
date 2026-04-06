@@ -27,7 +27,7 @@ export default function Transaction({ data }) {
           </p>
         </div>
         <div class="overflow-x-auto">
-        <table class="w-full min-w-[600px]">
+        <table class="w-full min-w-150">
           <thead class="bg-(--surface-2) rounded-2xl ">
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>

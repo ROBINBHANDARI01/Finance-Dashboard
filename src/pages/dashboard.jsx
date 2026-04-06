@@ -6,7 +6,7 @@ import { transactions } from "../data/mockData";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col gap-6 md:p-4 md:px-5">
+    <div className="flex flex-col gap-6 md:p-4 md:px-1">
       <div>
         <h1 className="text-2xl font-bold">Dashboard</h1>
         <p className="text-sm text-(--text-secondary)">
