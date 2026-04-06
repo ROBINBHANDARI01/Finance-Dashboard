@@ -1,16 +1,82 @@
-# React + Vite
+# Financial Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive financial dashboard built with React + Tailwind CSS, designed to visualize personal finance data with clean UI and intuitive components.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://finance-dashboard-mocha-xi.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+### Interactive Dashboard UI
+Summary cards (Balance, Income, Expenses, Savings)
+Clean and structured layout
 
-## React Compiler
+### Data Visualization
+Balance trend chart
+Spending breakdown
+Insights panel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Transactions Table
+Recent transactions with categories
+Income vs Expense tracking
 
-## Expanding the ESLint configuration
+### Fully Responsive
+Works across desktop, tablet, and mobile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Fast Deployment
+Hosted on Vercel
+
+## Tech Stack
+Frontend: React (Vite)
+Styling: Tailwind CSS
+State/Data: Static mock data (for UI development)
+visualization Libraries: Tanstack-react , react-Recharts , lucide-react
+Deployment: Vercel
+
+## Project Structure
+
+src/
+│
+├── components/
+│   ├── dashboard/
+│   │   ├── Balance-trend.jsx
+│   │   ├── card.jsx
+│   │   ├── Insights.jsx
+│   │   ├── Spending.jsx
+│   │   ├── SummaryCard.jsx
+│   │   └── TransactionsTable.jsx
+│   │
+│   └── layout/
+│       ├── Layout.jsx
+│       ├── Navbar.jsx
+│       └── sidebar.jsx
+│
+├── Context/
+│   ├── DashboardContext.jsx
+│   └── ThemeContext.jsx
+│
+├── data/
+│   └── mockData.js
+│
+├── pages/
+│   └── dashboard.jsx
+│
+├── utils/
+│
+├── App.css
+├── App.jsx
+├── index.css
+└── main.jsx
+
+## Key Learnings
+Building reusable UI components in React
+Structuring a scalable dashboard layout
+With this project i got to know various react libraries for data visualization
+Managing UI with mock data
+Responsive design using Tailwind CSS
+Deploying production-ready apps on Vercel
+
+## Ui of the app across various devices
+
+![Across All Devices](./src//assets/UI%20images/mockup-all-framed.png)
+![Dashboard](./src/assets//UI%20images/mockup-desktop-framed%20(1).png)
+![Mobile View](./src/assets/UI%20images/mockup-mobile-framed%20(1).png)
+![Tablet View](./src/assets/UI%20images/mockup-tablet-framed%20(1).pngpng)
