@@ -1,4 +1,3 @@
-// data/dashboardData.js
 
 export const user = {
   name: "Robin Bhandari",
@@ -9,6 +8,7 @@ export const user = {
 export const summaryCards = [
   {
     id: 1,
+    imgKey:"balance",
     title: "Total Balance",
     amount: 12340.75,
     change: 4.3,
@@ -17,6 +17,7 @@ export const summaryCards = [
   },
   {
     id: 2,
+    imgKey:"income",
     title: "Income",
     amount: 4200.00,
     change: 2.1,
@@ -25,6 +26,7 @@ export const summaryCards = [
   },
   {
     id: 3,
+    imgKey:"expense",
     title: "Expenses",
     amount: 3105.50,
     change: 5.8,
@@ -33,6 +35,7 @@ export const summaryCards = [
   },
   {
     id: 4,
+    imgKey:"savings",
     title: "Net Savings",
     amount: 1094.50,
     change: 3.2,
@@ -134,7 +137,7 @@ export const transactions = [
 export const insights = {
   highestSpending: {
     category: "Housing",
-    amount: 993.76,
+    amount: 4000.76,
     percent: 32,
   },
   vsLastMonth: {

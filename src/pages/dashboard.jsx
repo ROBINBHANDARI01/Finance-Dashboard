@@ -3,8 +3,8 @@ import Spending from "../components/dashboard/Spending";
 import Balancetend from "../components/dashboard/Balance-trend";
 import Transaction from "../components/dashboard/TransactionsTable";
 import Insights from "../components/dashboard/Insights";
-import { summaryCards, transactions } from "../data/mockData";
-import { Car } from "lucide-react";
+import { user, summaryCards, transactions } from "../data/mockData";
+
 
 export default function Dashboard() {
   return (
@@ -12,7 +12,7 @@ export default function Dashboard() {
       <div>
         <h1 className="text-2xl font-bold">Dashboard</h1>
         <p className="text-sm text-(--text-secondary)">
-          Welcome back Robin, here's your financial overview.
+          Welcome back {user.name}, here's your financial overview.
         </p>
       </div>
 
@@ -21,6 +21,7 @@ export default function Dashboard() {
        {summaryCards.map((card) => (
         <Card 
         key={card.id}
+        imgKey={card.imgKey}
         title={card.title}
         amount={card.amount}
         change={card.change}
@@ -30,7 +31,7 @@ export default function Dashboard() {
       </div>
 
       {/* Middle Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 items-stretch" >
+      <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 items-start" >
         <div class="lg:col-span-2 md:col-span-2">
           <Balancetend />
         </div>
@@ -39,7 +40,7 @@ export default function Dashboard() {
           <Spending></Spending>
         </div>
 
-        <div class="lg:col-span-2 md:col-span-2"><Transaction data={transactions}/></div>
+        <div class="lg:col-span-2 md:col-span-3"><Transaction data={transactions}/></div>
 
           <div class="lg:col-span-1"><Insights></Insights></div>
 

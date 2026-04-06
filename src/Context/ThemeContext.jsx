@@ -6,6 +6,7 @@ export function ThemeProvider({children}){
     const [theme , setTheme] = useState(
         localStorage.getItem("theme") || "dark"
     );
+    
 
     useEffect(()=>{
         document.documentElement.classList.remove("light","dark");

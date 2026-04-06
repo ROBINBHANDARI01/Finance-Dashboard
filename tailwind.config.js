@@ -9,7 +9,7 @@ export default {
     extend: {
 
       screen:{
-        xs: '500px',
+        xs: '452px',
         sm: '640px',
         md: '768px',
         big: '956px',

@@ -1,11 +1,11 @@
 import {Children, createContext ,useContext } from "react"
-import {user , summaryCards, balanceTrend} from "../data/mockData"
+import {user , summaryCards, balanceTrend, insights, transactions} from "../data/mockData"
 
 const DashboardContext = createContext();
 
 export function DashboardProvider({ children }){
     return(
-        <DashboardContext.Provider value={{user, summaryCards, balanceTrend}}>
+        <DashboardContext.Provider value={{user, summaryCards, balanceTrend, insights, transactions}}>
         {children}
         </DashboardContext.Provider>  
      )

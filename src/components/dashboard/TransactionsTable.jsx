@@ -1,4 +1,5 @@
 import { useReactTable, getCoreRowModel } from "@tanstack/react-table";
+
 export default function Transaction({ data }) {
   const columns = [
     { header: "Date", accessorKey: "date" },
