@@ -6,7 +6,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       {/* Overlay (mobile) */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 lg:block hidden"
+          className="fixed inset-0 bg-black/50 z-40 cursor-pointer"
           onClick={() => setIsOpen(false)}
         />
       )}

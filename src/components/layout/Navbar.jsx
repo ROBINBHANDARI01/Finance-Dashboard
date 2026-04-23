@@ -6,9 +6,9 @@ import { Sun, Bell, Search, Menu, Moon } from "lucide-react";
 export default function Nav({ setIsOpen }) {
   const {theme, toggleTheme} = useTheme();
   return (
-    <div className="flex items-center justify-between p-4  w-full">
+    <div className="flex items-center justify-between p-4   w-full">
   
-      <div className="flex items-center gap-2 lg:hidden">
+      <div className="flex items-center gap-1 lg:hidden">
         <button onClick={() => setIsOpen(true)}>
           <Menu />
         </button>
