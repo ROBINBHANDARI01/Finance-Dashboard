@@ -79,8 +79,12 @@ Deploying production-ready apps on Vercel
 ![Across All Devices](./src//assets/UI%20images/mockup-all-framed.png)
 ![Dashboard](./src/assets//UI%20images/mockup-desktop-framed%20(1).png)
 ![Mobile View](./src/assets/UI%20images/mockup-mobile-framed%20(1).png)
+<<<<<<< HEAD
 ![Tablet View](./src/assets/UI%20images/mockup-tablet-framed%20(1).png)
 
 ## These resources helped a lot 
 Icons: www.flaticon.com
 Mockup: https://mockupframe.com/
+=======
+![Tablet View](./src/assets/UI%20images/mockup-tablet-framed%20(1).pngp)
+>>>>>>> 6ea2cd3ccd949c1b6206a0c197f9beaf1821e0f7
